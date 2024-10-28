@@ -17,13 +17,16 @@
 factorial = 1
 while (True):
     upperBound = input("Enter an upper bound: ")
-    upperBound = int(upperBound)
-    if upperBound > 0:
-        for value in range(1,upperBound+1):
-            factorial = value*factorial
-        break
+    if upperBound.isdigit() == True:
+        upperBound = int(upperBound)
+        if upperBound > 0:
+            for value in range(1,upperBound+1):
+                factorial = value*factorial
+            break
+        else:
+            print("Entered 0, try again")
     else:
-        print("Entered a non-valid character, try again")
+        print("Entered a non-valid value, try again")
 
 # 5! = 120
 print(f"The result of the factorial based on the given bound is {factorial}")
