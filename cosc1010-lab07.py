@@ -15,7 +15,17 @@
 # You will continue to prompt the user until a proper integer value is entered
 
 factorial = 1
+while (True):
+    upperBound = input("Enter an upper bound: ")
+    upperBound = int(upperBound)
+    if upperBound > 0:
+        for value in range(1,upperBound+1):
+            factorial = value*factorial
+        break
+    else:
+        print("Entered a non-valid character, try again")
 
+# 5! = 120
 print(f"The result of the factorial based on the given bound is {factorial}")
 
 print("*"*75)
