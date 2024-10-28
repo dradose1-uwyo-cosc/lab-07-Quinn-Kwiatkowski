@@ -48,6 +48,12 @@ print("*"*75)
 # The sum should start at 0 
 
 num_sum = 0 
+userInput = input("Enter a number that you want to add ")
+while (True):
+    userInput = int(userInput)
+    num_sum = num_sum + userInput
+    if userInput.lower() == "exit":
+        break
 
 print(f"Your final sum is {num_sum}")
 
