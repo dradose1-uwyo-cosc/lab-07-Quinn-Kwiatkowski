@@ -1,12 +1,9 @@
-# Your Name Here
+# Quinn Kwiatkowski
 # UWYO COSC 1010
-# Submission Date
-# Lab XX
-# Lab Section: 
-# Sources, people worked with, help given to: 
-# your
-# comments
-# here
+# Submission Date: 11/03/2024
+# Lab 07
+# Lab Section: 14
+# Sources, people worked with, help given to: None
 
 
 # Prompt the user for an upper bound 
