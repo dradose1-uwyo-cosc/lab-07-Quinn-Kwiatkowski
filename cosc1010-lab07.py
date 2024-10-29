@@ -50,10 +50,10 @@ print("*"*75)
 num_sum = 0 
 while (True):
     userInput = input("Enter a number that you want to add, or type 'exit' to exit ")
-    if userInput == int
-        num_sum = num_sum + userInput
-    elif userInput.lower() == "exit":
+    if userInput.lower() == "exit":
         break
+    elif userInput.lstrip("-").isdigit():
+        num_sum += int(userInput)
     else:
         print("Not a valid input, try again")
 
