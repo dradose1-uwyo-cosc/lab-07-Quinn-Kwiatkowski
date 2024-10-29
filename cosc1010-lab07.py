@@ -77,4 +77,40 @@ print("*"*75)
 # Print the result of the equation
 # Again, loop through prompting the user for input until `exit` in any casing is input 
 
-        
+while True:
+    userInput = input("Enter an operation for the calculator, or type 'exit' to quit: ")
+    if userInput.lower() == "exit":
+        break
+
+    parts = userInput.split() # Spliting operation into parts
+
+    if len(parts) == 3: # Make sure user entered calculation in right
+        operand1, operator, operand2 = parts
+
+        if operand1.isdigit() and operand2.isdigit(): # Make sure that both numbers are actually numbers
+            operand1 = int(operand1)
+            operand2 = int(operand2)
+
+            if operator == '+':
+                result = operand1 + operand2
+            elif operator == '-':
+                result = operand1 - operand2
+            elif operator == "/":
+                result = operand1 / operand2
+            elif operator == '*':
+                result = operand1 * operand2
+            elif operator == '%':
+                result = operand1 % operand2
+            else:
+                print("Invalid Operator Dawg")
+                continue
+
+            print(f"Answer ---> {result}")
+
+        else:
+            print("Both operands must be numbers dawg")
+
+    else:
+        print("Dawg retry with the correct format")
+
+print("Program Done")
